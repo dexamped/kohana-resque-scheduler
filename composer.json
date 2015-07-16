@@ -1,0 +1,26 @@
+{
+    "name":         "dexamped/kohana-resque-scheduler",
+    "description":  "Kohana wrapper for php-resque-scheduler",
+    "license":      "BSD-3-Clause",
+    "type":         "kohana-module",
+    "keywords":     ["resque", "kohana"],
+    "authors": [
+        {
+            "name": "Chris",
+            "email": "dexamped@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "bin": ["bin/kresque-scheduler"],
+    "require": {
+        "composer/installers": "~1.0",
+        "kohana/core":         ">=3.3",
+        "php":                 ">=5.3.3",
+        "chrisboulton/php-resque-scheduler": "dev-master"
+    },
+    "extra": {
+        "installer-paths": {
+            "vendor/{$vendor}/{$name}": ["type:kohana-module"]
+        }
+    }
+}
